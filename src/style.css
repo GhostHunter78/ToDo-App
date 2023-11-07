@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #fafafa;
+  overflow: hidden;
 }
 
 .heading-div {
@@ -59,6 +60,10 @@ body {
   opacity: 0.5;
   padding: 2px 4px;
   background: transparent;
+}
+
+.check-icon {
+  display: none;
 }
 
 .create-todo {
@@ -170,6 +175,18 @@ body {
   color: #3a7cfd;
 }
 
+.dark-mode-backgroundImage {
+  background-image: url(./assets/bg-mobile-dark.jpg);
+}
+
+.dark-background-color {
+  background-color: #25273d !important;
+}
+
+.boxShadow-dark {
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5) !important;
+}
+
 @media (min-width: 1440px) {
   .main {
     align-items: center;
@@ -183,6 +200,10 @@ body {
     align-items: center;
     flex-direction: column;
     display: flex;
+  }
+
+  .dark-mode-backgroundImage {
+    background-image: url(./assets/bg-desktop-dark.jpg);
   }
 
   .logo-and-moon {
@@ -202,9 +223,15 @@ body {
     width: 540px;
   }
 
+  .created-task {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   .create-todo {
     width: 435px;
     font-size: 16px;
+    cursor: pointer;
   }
 
   .circle {
@@ -212,9 +239,37 @@ body {
     height: 24px;
   }
 
+  .circle:hover {
+    border-color: blue;
+    cursor: pointer;
+  }
+
   .left-items,
-  .clear-completed {
+  .clear-completed,
+  .all,
+  .active,
+  .completed {
     font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* .left-items:hover,
+  .clear-completed:hover,
+  .all:hover,
+  .active:hover,
+  .completed:hover {
+    color: #494c6b;
+    transition: 0.3s;
+  } */
+
+  .light-hover:hover {
+    color: #494c6b;
+    transition: 0.3s;
+  }
+
+  .dark-hover:hover {
+    color: #e3e4f1;
+    transition: 0.3s;
   }
 
   .last-window-desktop {
@@ -245,5 +300,9 @@ body {
 
   .drag-n-drop {
     margin-top: 50px;
+  }
+
+  .cross {
+    cursor: pointer;
   }
 }
