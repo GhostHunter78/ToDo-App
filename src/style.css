@@ -67,7 +67,7 @@ body {
 }
 
 .create-todo {
-  width: 274px;
+  width: 100%;
   color: #9495a5;
   font-size: 12px;
   font-style: normal;
@@ -229,7 +229,6 @@ body {
   }
 
   .create-todo {
-    width: 435px;
     font-size: 16px;
     cursor: pointer;
   }
