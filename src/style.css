@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
-:root {
+#root {
   padding-bottom: 72px;
 }
 
@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #fafafa;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .heading-div {
@@ -52,18 +52,24 @@ body {
   gap: 12px;
 }
 
+.create-todo-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  opacity: 0.5;
+  padding: 4px;
+  background: transparent;
+}
+
 .circle {
   width: 20px;
   height: 20px;
   border: 1px solid #979797;
   border-radius: 50%;
   opacity: 0.5;
-  padding: 2px 4px;
+  padding: 4px;
   background: transparent;
-}
-
-.check-icon {
-  display: none;
 }
 
 .create-todo {
@@ -88,13 +94,21 @@ body {
   background: #fff;
   box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
   padding: 16px 20px;
-  margin-top: 1px;
+  margin-top: 0.8px;
 }
 
 .circle-text-cross {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.check-icon-active {
+  display: block;
+}
+
+.check-icon {
+  display: none;
 }
 
 .created-task {
@@ -171,16 +185,16 @@ body {
   margin-top: 40px;
 }
 
-.active-array {
-  color: #3a7cfd;
-}
-
 .dark-mode-backgroundImage {
   background-image: url(./assets/bg-mobile-dark.jpg);
 }
 
 .dark-background-color {
   background-color: #25273d !important;
+}
+
+.body-dark {
+  background-color: #171823 !important;
 }
 
 .boxShadow-dark {
@@ -236,6 +250,7 @@ body {
   .circle {
     width: 24px;
     height: 24px;
+    padding: 6px;
   }
 
   .circle:hover {
