@@ -68,7 +68,7 @@ body {
   border: 1px solid #979797;
   border-radius: 50%;
   opacity: 0.5;
-  padding: 4px;
+  padding: 2px 4px;
   background: transparent;
 }
 
@@ -250,7 +250,7 @@ body {
   .circle {
     width: 24px;
     height: 24px;
-    padding: 6px;
+    padding: 4px 6px;
   }
 
   .circle:hover {
